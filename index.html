@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A robust HTML5 starter template">
+    <title>Robust HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background: #666;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Robust HTML Page</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a fully self-contained, robust HTML5 file with styling and interactive JavaScript. You can run it directly in your browser.</p>
+        
+        <h3>Interactive Button</h3>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message" style="margin-top:10px;"></p>
+    </main>
+
+    <footer>
+        <p>© 2025 My Robust HTML Page</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "Hello! You clicked the button.";
+        }
+    </script>
+</body>
+</html>
